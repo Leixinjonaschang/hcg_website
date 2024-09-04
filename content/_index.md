@@ -11,7 +11,7 @@ sections:
         Hua Chen
         Research Group
       image:
-        filename: welcome.jpg
+        filename: welcome.gif
       text: |
         <br>
         
