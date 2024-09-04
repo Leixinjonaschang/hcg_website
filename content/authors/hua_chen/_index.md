@@ -19,10 +19,10 @@ role: Assistant Professor
 # Organizations/Affiliations
 organizations:
   - name: Zhejiang University/University of Illinois Urbana-Champaign
-    url: ''
+    url: 'https://zjui.intl.zju.edu.cn/'
 
 # Short bio (displayed in user profile at end of posts)
-bio: to be edited.
+bio: 
 
 interests:
   - Control Theory
