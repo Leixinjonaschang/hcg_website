@@ -1,48 +1,53 @@
-# [Hugo Research Group Theme](https://github.com/wowchemy/starter-hugo-research-group)
 
-[![Screenshot](preview.png)](https://hugoblox.com/hugo-themes/)
 
-The **Research Group Template** empowers your research group to easily create a beautiful website with a stunning homepage, news, academic publications, events, team profiles, and a contact form.
 
-️**Trusted by 250,000+ researchers, educators, and students.** Highly customizable via the integrated **no-code, widget-based Wowchemy page builder**, making every site truly personalized ⭐⭐⭐⭐⭐
-
-[![Get Started](https://img.shields.io/badge/-Get%20started-ff4655?style=for-the-badge)](https://hugoblox.com/hugo-themes/)
-[![Discord](https://img.shields.io/discord/722225264733716590?style=for-the-badge)](https://discord.com/channels/722225264733716590/742892432458252370/742895548159492138)  
-[![Twitter Follow](https://img.shields.io/twitter/follow/GetResearchDev?label=Follow%20on%20Twitter)](https://twitter.com/wowchemy)
-
-Easily write technical content with plain text Markdown, LaTeX math, diagrams, RMarkdown, or Jupyter, and import publications from BibTeX.
-
-[Check out the latest demo](https://research-group.netlify.app/) of what you'll get in less than 60 seconds, or [view the showcase](https://hugoblox.com/creators/).
-
-The integrated [**Wowchemy**](https://hugoblox.com) website builder and CMS makes it easy to create a beautiful website for free. Edit your site in the CMS (or your favorite editor), generate it with [Hugo](https://github.com/gohugoio/hugo), and deploy with GitHub or Netlify. Customize anything on your site with widgets, light/dark themes, and language packs.
-
-- 👉 [**Get Started**](https://hugoblox.com/hugo-themes/)
-- 📚 [View the **documentation**](https://docs.hugoblox.com/)
-- 💬 [Chat with the **Wowchemy research community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- ⬇️ **Automatically import citations from BibTeX** with the [Hugo Academic CLI](https://github.com/GetRD/academic-file-converter)
-- 🐦 Share your new site with the community: [@wowchemy](https://twitter.com/wowchemy) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithWowchemy](https://twitter.com/search?q=%23MadeWithWowchemy&src=typed_query)
-- 🗳 [Take the survey and help us improve #OpenSource](https://forms.gle/NioD9VhUg7PNmdCAA)
-- 🚀 [Contribute improvements](https://github.com/HugoBlox/hugo-blox-builder/blob/main/CONTRIBUTING.md) or [suggest improvements](https://github.com/HugoBlox/hugo-blox-builder/issues)
-- ⬆️ **Updating?** View the [Update Guide](https://docs.hugoblox.com/hugo-tutorials/update/) and [Release Notes](https://github.com/HugoBlox/hugo-blox-builder/releases)
-
-## We ask you, humbly, to support this open source movement
-
-Today we ask you to defend the open source independence of the Wowchemy website builder and themes 🐧
-
-We're an open source movement that depends on your support to stay online and thriving, but 99.9% of our creators don't give; they simply look the other way.
-
-### [❤️ Click here to become a GitHub Sponsor, unlocking awesome perks such as _exclusive academic templates and widgets_](https://github.com/sponsors/gcushen)
-
-## Demo credits
-
-Please replace the demo images with your own.
-
-- [Female scientist](https://unsplash.com/photos/uVnRa6mOLOM)
-- [2 Coders](https://unsplash.com/photos/kwzWjTnDPLk)
-- [Cafe](https://unsplash.com/photos/RnDGGnMEOao)
-- Blog posts
-  - https://unsplash.com/photos/AndE50aaHn4
-  - https://unsplash.com/photos/OYzbqk2y26c
-- Avatars
-  - https://unsplash.com/photos/5yENNRbbat4
-  - https://unsplash.com/photos/WNoLnJo7tS8
+# Maintanance of the group website
+## Installation
+1. Install [Hugo Extended](https://github.com/gohugoio/hugo/releases?page=3). (This repo was tested with hugo [v0.123.8](https://github.com/gohugoio/hugo/releases/tag/v0.123.8))
+2. Install Go ``sudo  snap  install  --classic  go``
+3. Install Node.js ``sudo  snap  install  --classic  node``
+## Structure of the website repo
+Most of the change can be conducted by modifying the files in the ``content`` folder. And the related media like pics should be stored in the ``/asset/media`` folder . 
+```
+.
+├── LICENSE.md
+├── README.md
+├── assets
+│   ├── jsconfig.json
+│   ├── media
+│   └── scss
+├── config
+│   └── _default
+├── content
+│   ├── _index.md
+│   ├── admin
+│   ├── authors
+│   ├── contact
+│   ├── event
+│   ├── people
+│   ├── post
+│   ├── publication
+│   └── tour
+├── go.mod
+├── go.sum
+├── images
+│   ├── screenshot.png
+│   └── tn.png
+├── netlify.toml
+├── preview.png
+├── static
+│   └── uploads
+└── theme.toml
+```
+## How to modify the personal profile
+You can commit changes to your profiles by modifying the files in the folder ``/content/authors/<first_name>_<last_name>``.
+## Locally preview
+Execute following the commands under the website project root path  
+1. ``hugo``
+2. ``hugo server``
+	There will appear a URL for preview.
+## Update the changes to the online website
+Committing and pushing the modifications to remote repo, the website will update autonoumously by Github Action. 
+## Template source and official doc
+1. [Template employed](https://hugoblox.com/templates/details/research-group/)
+1. [Official doc](https://docs.hugoblox.com/zh-cn/getting-started/install-hugo/)
